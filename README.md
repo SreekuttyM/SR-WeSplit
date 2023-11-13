@@ -1,2 +1,3 @@
 # SR-WeSplit
-Share the amount easy and equally among groups
+
+This app is to easily share the amount easy and equally among groups
