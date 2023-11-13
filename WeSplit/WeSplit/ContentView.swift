@@ -9,14 +9,28 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!").foregroundStyle(.accent)
-                
+        NavigationStack {
+            Text("Hello, world!")
+            .navigationTitle("SwiftUI").navigationBarTitleDisplayMode(.inline)
         }
-        .padding()
+
+        Form {
+            Section {
+                Text("Hello, world!").foregroundStyle(.accent)
+                Text("Hello, world!").foregroundStyle(.accent)
+            }
+            
+            Section {
+                Text("Hello, world!").foregroundStyle(.accent)
+                Text("Hello, world!").foregroundStyle(.accent)
+            }
+            
+            Text("Hello, world!").foregroundStyle(.accent)
+            Text("Hello, world!").foregroundStyle(.accent)
+            Text("Hello, world!").foregroundStyle(.accent)
+
+
+        }
     }
 }
 
