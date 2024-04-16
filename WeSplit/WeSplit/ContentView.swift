@@ -32,7 +32,7 @@ struct ContentView: View {
         NavigationStack {
             Form {
                 Section("Amount to Share") {
-                    TextField("Amount", value: $checkAmount, format:  .currency(code: Locale.current.currency?.identifier ?? "AED"))
+                    TextField("Amount", value: $checkAmount, format:  .currency(code: Locale.current.currency?.identifier ?? "AED")).foregroundStyle(tipPercentage == 0 ? .red : .black)
                 }
 
                     Section("Amount to Share") {
